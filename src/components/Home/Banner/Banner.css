@@ -1,0 +1,38 @@
+.banner{
+    margin-bottom: 70px;
+}
+.banner_inner {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.banner_left{
+    width: 50%;
+}
+.banner_left h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #3a4256;
+    margin-bottom: 20px;
+}
+.banner_left p {
+    color: #737373;
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.banner_left button {
+    background: linear-gradient(to right, #19d3b0, #10d0ea);
+    border: none;
+    font-size: 14px;
+    font-family: 'Poppins';
+    color: #fff;
+    cursor: pointer;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.banner_right{
+    width: 50%;
+}
+.banner_right img{}
