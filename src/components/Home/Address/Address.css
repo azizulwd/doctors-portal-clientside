@@ -1,0 +1,29 @@
+.address{
+    margin-bottom: 70px;
+}
+.address_inner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.address_inner > div {
+    background: #1cc7c1;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: #fff;
+    border-radius: 5px;
+}
+.address_inner > div:nth-child(even){
+    background: #3a4256;
+}
+.opening_logo img {
+    width: 40px;
+}
+.address_inner > div .opening_info h4, .address_inner > div .location h4{
+    margin-bottom: 10px;
+}
+.address_inner > div .opening_info p, .address_inner > div .location p{
+    font-size: 14px;
+}
