@@ -7,7 +7,7 @@ import people3 from '../../../images/people-3.png';
 const Testimonial = () => {
     return (
         <div className="testimonial">
-            <div className="testimonial_title">
+            <div className="container testimonial_title">
                 <h3>TESTIMONIAL</h3>
                 <h1>What's Our Patients Says</h1>
             </div>
