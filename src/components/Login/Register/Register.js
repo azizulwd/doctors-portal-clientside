@@ -1,11 +1,10 @@
 import React from 'react';
 import loginImg from '../../../images/login.png';
 import { Link } from 'react-router-dom';
-import './Login.css';
 
-const Login = () => {
+const Register = () => {
 
-    const handleLoginForm = e =>{
+    const handleRegisterForm = e =>{
         e.preventDefault();
     }
 
@@ -14,15 +13,17 @@ const Login = () => {
             <div className="container login_inner">
                 <div className="login_form">
                     <div className="login_header">
-                        <h3>Login</h3>
+                        <h3>Register</h3>
                     </div>
-                    <form onSubmit={handleLoginForm}>
+                    <form onSubmit={handleRegisterForm}>
+                        <input type="text" placeholder="Name" />
                         <input type="email" placeholder="Email" />
                         <input type="password" placeholder="Password" />
-                        <button type="submit">Login</button>
+                        <input type="password" placeholder="Re-type Password" />
+                        <button type="submit">Register</button>
                     </form>
                     <div className="toggle_form">
-                        <Link to="/register">New user? Create an Account.</Link>
+                        <Link to="/login">Already have an account? Please login.</Link>
                     </div>
                 </div>
                 <div className="login_img">
@@ -33,4 +34,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Register;
