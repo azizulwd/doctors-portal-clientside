@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import loginImg from '../../../images/login.png';
 import { Link } from 'react-router-dom';
 
 const Register = () => {
+    const [loginData, setLoginData] = useState({});
+
+    const handleOnChange = e =>{
+        const field = e.target.name;
+        const value = e.target.value;
+        const newLoginData = {...loginData};
+        newLoginData[field] = value;
+        setLoginData(newLoginData);
+    }
 
     const handleRegisterForm = e =>{
         e.preventDefault();
@@ -16,10 +25,10 @@ const Register = () => {
                         <h3>Register</h3>
                     </div>
                     <form onSubmit={handleRegisterForm}>
-                        <input type="text" placeholder="Name" />
-                        <input type="email" placeholder="Email" />
-                        <input type="password" placeholder="Password" />
-                        <input type="password" placeholder="Re-type Password" />
+                        <input onChange={handleOnChange} type="text" placeholder="Name" name="name" />
+                        <input onChange={handleOnChange} type="email" placeholder="Email" name="email" />
+                        <input onChange={handleOnChange} type="password" placeholder="Password" name="password" />
+                        <input onChange={handleOnChange} type="password" placeholder="Re-type Password" name="password2" />
                         <button type="submit">Register</button>
                     </form>
                     <div className="toggle_form">
