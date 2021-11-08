@@ -32,6 +32,9 @@ form input {
 form input:hover{
     border-bottom: 3px solid gray;
 }
+form input:focus{
+    border-bottom: 3px solid #007af5;
+}
 form button {
     background: linear-gradient(to right, #11d0dd, #19d3ae);
     color: #fff;
